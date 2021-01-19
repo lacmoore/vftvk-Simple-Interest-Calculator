@@ -10,7 +10,7 @@ function compute()
 var interest = principal * years * rate/100
 var actual_years = (new Date()).getFullYear() + years;
 var result = document.getElementById("result");
-result.innerHTML = "If you deposit <b>"+principal+"</b>,at an interest rate of <b>"+ rate+"%</b>. You will receive an amount of <b>"+interest+"</b>, in the year <b>"+actual_years+"</b>";
+result.innerHTML = "If you deposit <b style='color:yellow'>"+principal+"</b>,at an interest rate of <b style='color:yellow'>"+ rate+"%</b>. You will receive an amount of <b style='color:yellow'>"+interest+"</b>, in the year <b>"+actual_years+"</b>";
 
 
 }
