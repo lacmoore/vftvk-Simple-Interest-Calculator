@@ -4,9 +4,7 @@ function compute()
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = parseInt(document.getElementById("years").value);
-    console.log(principal);
-    console.log(rate);
-    console.log(years);
+   checkValue();
 var interest = principal * years * rate/100
 var actual_years = (new Date()).getFullYear() + years;
 var result = document.getElementById("result");
@@ -19,7 +17,7 @@ function writePercentage(){
 }
     
 function checkValue(){
-    if( document.getElementById("principal")=="" || parseInt(document.getElementById("principal").value) < 1){
+        if( document.getElementById("principal")=="" || parseInt(document.getElementById("principal").value) < 1){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
