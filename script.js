@@ -17,7 +17,7 @@ function writePercentage(){
 }
     
 function checkValue(){
-        if( document.getElementById("principal")=="" || parseInt(document.getElementById("principal").value) < 1){
+        if( document.getElementById("principal").value=="" || parseInt(document.getElementById("principal").value) < 1){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
